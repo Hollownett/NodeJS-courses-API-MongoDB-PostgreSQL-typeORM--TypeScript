@@ -7,13 +7,11 @@ export class MyBook {
 
     @Column({
         type: 'text',
-      
-    })
+          })
     title: string;
     
     @Column({
         type: 'text',
-       
-    })
+          })
     author: string
     }
