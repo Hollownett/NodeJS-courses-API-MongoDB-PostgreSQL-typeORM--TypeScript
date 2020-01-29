@@ -22,7 +22,6 @@ export let CopyAllBooks = (req: Request, res: Response) => {
       if (err) {
         res.send("Error!");
       } else {
-          
         createConnection(config).then(async connection => {
           await books.forEach(book => {
                let mybook : MyBook = new MyBook();
