@@ -1,0 +1,28 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.ts",
+  "dependencies": {
+    "@types/express": "^4.17.2",
+    "@types/mongoose": "^5.7.0",
+    "@types/node": "^13.5.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongodb": "^3.5.2",
+    "mongoose": "^5.8.10",
+    "nodemon": "^2.0.2",
+    "pg": "^7.17.1",
+    "reflect-metadata": "^0.1.13",
+    "ts-node": "^8.6.2",
+    "typeorm": "^0.2.22",
+    "typescript": "^3.7.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "ts-node ./src/app.ts",
+    "test": "nodemon ts-node app.ts"
+  },
+  "author": "",
+  "license": "ISC"
+}
