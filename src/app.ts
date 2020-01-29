@@ -2,15 +2,11 @@ import express, { Request, Response } from "express";
 import * as bookController from "./controllers/bookController";
 import "reflect-metadata";
 
-
-// Our Express APP config
 const app = express();
 app.use(express.json());
 app.set("port",  3000);
 
-
-
-// API 
+//API
 app.get("/", (req: Request, res: Response) => res.send("It works!"))
 app.get("/books", bookController.allBooks);
 app.get("/book/:id", bookController.getBook);
@@ -21,5 +17,5 @@ app.delete("/book/:id", bookController.deleteBook);
 app.get("/bookCopy", bookController.CopyAllBooks);
 
 const server = app.listen(app.get("port"), () => {
-  console.log("App is running on http://localhost:%d", app.get("port"));
+  console.log("App is listening on http://localhost:%d", app.get("port"));
 });
